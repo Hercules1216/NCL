@@ -16,6 +16,6 @@
 1. `cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq | wc -l`
 1. `cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq -c | sort -nr | head`
 1. `cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq -c | sort -nr | head -20`
-1. `[Wilder Security](https://www.wilderssecurity.com/threads/tcp-flags-s-whats-this.41583/)  AND` 
-`[Firewall](http://www.firewall.cx/networking-topics/protocols/tcp/136-tcp-flag-options.html)`
+1. [Wilder Security](https://www.wilderssecurity.com/threads/tcp-flags-s-whats-this.41583/)  AND
+[Firewall](http://www.firewall.cx/networking-topics/protocols/tcp/136-tcp-flag-options.html)
 1. `cat netflow.txt | awk '{print $8}' | grep S | wc -l`
