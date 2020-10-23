@@ -12,10 +12,16 @@
 ---
 
 ###
-1. `wc -l netflow.txt`
-1. `cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq | wc -l`
-1. `cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq -c | sort -nr | head`
-1. `cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq -c | sort -nr | head -20`
-1. [Wilder Security](https://www.wilderssecurity.com/threads/tcp-flags-s-whats-this.41583/)  AND
+1. wc -l netflow.txt
+    - `3692`
+2. cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq | wc -l
+    - `204`
+3. cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq -c | sort -nr | head
+    - `102.85.184.239`
+4. cut -d ':' -f3 netflow.txt | cut -d 'P' -f2 | tr -d ' '| sort -n | uniq -c | sort -nr | head -20
+    - `220.165.13.183`
+5. [Wilder Security](https://www.wilderssecurity.com/threads/tcp-flags-s-whats-this.41583/)  AND
 [Firewall](http://www.firewall.cx/networking-topics/protocols/tcp/136-tcp-flag-options.html)
-1. `cat netflow.txt | awk '{print $8}' | grep S | wc -l`
+    - `synchronisation`
+6. cat netflow.txt | awk '{print $8}' | grep S | wc -l
+    - `3680`
